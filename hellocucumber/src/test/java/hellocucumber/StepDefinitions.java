@@ -15,11 +15,11 @@ public class StepDefinitions {
         // throw new io.cucumber.java.PendingException();
         this.today = day;
     }
-    @When("I ask whether it's Friday yet")
-    public void i_ask_whether_it_s_friday_yet() {
+    @When("I ask whether it's {string} yet")
+    public void i_ask_whether_it_s_friday_yet(String expectedResult) {
         // Write code here that turns the phrase above into concrete actions
         // throw new io.cucumber.java.PendingException();
-        this.actualAnswer = "Friday".equals(today) ? "Yes" : "Nope";
+        this.actualAnswer = expectedResult.equals(today) ? "Yes" : "Nope";
     }
     @Then("I should be told {string}")
     public void i_should_be_told(String expectedAnswer) {
