@@ -9,18 +9,6 @@ public class StepDefinitions {
     private String today;
     private String actualAnswer;
 
-    @Given("an example scenario")
-    public void anExampleScenario() {
-    }
-
-    @When("all step definitions are implemented")
-    public void allStepDefinitionsAreImplemented() {
-    }
-
-    @Then("the scenario passes")
-    public void theScenarioPasses() {
-    }
-
     @Given("today is {string}")
     public void today_is_sunday(String day) {
         // Write code here that turns the phrase above into concrete actions
