@@ -45,10 +45,4 @@ public class StepDefinitions {
         assertEquals(responseExpected, response.getBody());
     }
 
-    // @Then("the response should be false if today is not Friday")
-    // public void the_response_should_be_false_if_today_is_not_friday() {
-    //     boolean isNotFriday = LocalDate.now().getDayOfWeek() != DayOfWeek.FRIDAY;
-    //     assertEquals(Boolean.toString(isNotFriday), response.getBody());
-    // }
-
 }
