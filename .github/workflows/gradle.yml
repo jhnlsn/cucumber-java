@@ -37,7 +37,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Ensure Gradle wrapper files are present
-      run: ./gradlew wrapper
+      run: gradle wrapper
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
