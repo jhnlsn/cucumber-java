@@ -13,3 +13,9 @@ Feature: Check if today is Friday
     | thursday | false   |
     | saturday | false   |
     | sunday   | false   |
+
+  @EmbeddedKafka
+  Scenario: Get /isFriday and emit an event
+    Given today is "friday"
+    When I make a GET request to "/isFriday" with
+    Then an event should be emitted to Kafka
